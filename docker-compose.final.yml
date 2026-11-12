@@ -1,0 +1,8 @@
+services:
+  experiments:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile.final
+    volumes:
+      - ./docs:/workspace/docs
+    command: ["python", "scripts/final_experiments.py"]

@@ -1,0 +1,9 @@
+FROM python:3.12-slim
+WORKDIR /workspace
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 MPLBACKEND=Agg
+COPY backend/requirements.txt backend/requirements-lab.txt ./backend/
+RUN pip install --no-cache-dir -r backend/requirements-lab.txt
+COPY backend ./backend
+COPY scripts ./scripts
+COPY BASE_REVISION.txt ./
+CMD ["python", "scripts/final_experiments.py"]

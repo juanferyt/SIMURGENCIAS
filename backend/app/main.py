@@ -14,6 +14,8 @@ from .database import (AttentionRecord, PatientRecord, ResourceConfiguration, Se
 from .services import capacity, run_simulation, serialize_run, stored_config
 from .simulation.domain import SimulationConfig
 from .simulation.theory import mmc
+from .request_telemetry import record_request
+import time
 
 
 @asynccontextmanager
@@ -23,7 +25,7 @@ async def lifespan(app):
     yield
 
 
-app = FastAPI(title="SIMURGENCIAS · Entrega 1", version="1.0.0", lifespan=lifespan,
+app = FastAPI(title="SIMURGENCIAS · Entrega Final", version="2.0.0", lifespan=lifespan,
               description="Modelo académico con datos sintéticos. Gestión y DES independientes. No es una herramienta clínica.")
 app.add_middleware(CORSMiddleware, allow_origins=os.getenv("CORS_ORIGINS", "http://localhost:5173,http://localhost:8080").split(","),
                    allow_methods=["GET", "POST", "PATCH"], allow_headers=["Content-Type"])
@@ -32,10 +34,16 @@ DB = Annotated[Session, Depends(get_db)]
 
 @app.middleware("http")
 async def request_metrics(request, call_next):
-    response = await call_next(request)
-    with capacity.lock:
-        capacity.requests_processed += 1
-    return response
+    started = time.perf_counter()
+    status = 500
+    try:
+        response = await call_next(request)
+        status = response.status_code
+        return response
+    finally:
+        with capacity.lock:
+            capacity.requests_processed += 1
+        record_request(request.method, request.url.path, status, time.perf_counter() - started)
 
 
 class PatientInput(BaseModel):

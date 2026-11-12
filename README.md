@@ -1,8 +1,47 @@
-# SIMURGENCIAS · Entrega 1
+# SIMURGENCIAS · Entrega final
 
 Plataforma académica para la gestión, simulación y análisis de un servicio de urgencias. Asignatura **Modelos y Simulación**.
 
 **Datos sintéticos · escenario experimental · modelo académico.** No describe un hospital real, no implementa protocolos clínicos y no recomienda una dotación médica.
+
+
+## Entrega final: políticas y resultados nuevos
+
+El informe científico está en [docs/INFORME_FINAL.md](docs/INFORME_FINAL.md). La revisión técnica y los límites de verificación están en [docs/AUDITORIA_FINAL.md](docs/AUDITORIA_FINAL.md). Se conservan documentos históricos de Entrega 1 para trazabilidad.
+
+La versión final añade refuerzo médico de 12:00 a 18:00 sin interrumpir consultas, abandono académico configurable, un reintento máximo, medición HTTP en CSV y 810 corridas operativas más 60 referencias M/M/c. El modo interactivo conserva por defecto el modelo sin abandonos y sin refuerzo; configurar estos campos en Swagger o CLI/lote para activar el experimento final.
+
+**Desplegar API, PostgreSQL e interfaz:**
+
+```bash
+docker compose up --build -d
+```
+
+**Reproducir todas las tablas científicas de origen y figuras:**
+
+```bash
+docker compose -f docker-compose.final.yml run --build --rm experiments
+```
+
+Los CSV/JSON regenerados quedan en `docs/final_results/` y las figuras en `docs/figuras/`. El informe conserva una síntesis de la ejecución entregada: comparar el manifiesto y las tablas al repetir en otro entorno. Alternativa local: `pip install -r backend/requirements-lab.txt` y `python scripts/final_experiments.py`. No requiere base de datos.
+
+**Demostración corta:**
+
+```bash
+docker compose -f docker-compose.final.yml run --build --rm experiments python scripts/final_experiments.py --demo
+```
+
+**Sonda HTTP cuando Docker esté activo:**
+
+```bash
+python scripts/final_telemetry_probe.py --execution-scope docker-user-run
+```
+
+Esta sonda mide `/api/theory/mmc`; no prueba persistencia, ni concurrencia máxima, ni tiempos asistenciales. La telemetría del backend se escribe en `datos/telemetry_log.csv`. Volver a ejecutar la integración PostgreSQL y comprobar permisos de escritura antes de la defensa.
+
+**Estado de revisión:** 31 pruebas sin PostgreSQL aprobadas; 810+60 corridas ejecutadas localmente. Docker/PostgreSQL no se ejecutaron en el entorno de preparación por ausencia del motor Docker. El alcance del resultado y los supuestos aparecen en el informe.
+
+## Documentación histórica de la Entrega 1
 
 ## Problema y objetivo
 

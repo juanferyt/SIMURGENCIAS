@@ -15,11 +15,15 @@ services:
       timeout: 5s
       retries: 15
   backend:
+    image: simurgencias-backend:latest
     build: ./backend
     environment:
       DATABASE_URL: postgresql+psycopg://${POSTGRES_USER:-simurgencias}:${POSTGRES_PASSWORD:-simurgencias_demo}@postgres:5432/${POSTGRES_DB:-simurgencias}
+      TELEMETRY_LOG_PATH: /app/datos/telemetry_log.csv
       MAX_CONCURRENT_SIMULATIONS: ${MAX_CONCURRENT_SIMULATIONS:-2}
       CORS_ORIGINS: http://localhost:5173,http://localhost:8080
+    volumes:
+      - ./datos:/app/datos
     ports:
       - "127.0.0.1:8000:8000"
     depends_on:

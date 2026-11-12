@@ -2,7 +2,7 @@
 from dataclasses import dataclass
 from typing import Literal
 
-from pydantic import BaseModel, ConfigDict, Field, field_validator
+from pydantic import BaseModel, ConfigDict, Field, field_validator, model_validator
 
 
 class SimulationConfig(BaseModel):
@@ -22,6 +22,24 @@ class SimulationConfig(BaseModel):
     observation_mean_minutes: float = Field(60, gt=0, le=480)
     observation_probability: float = Field(0.2, ge=0, le=1)
     priority_policy: Literal["triage", "fifo"] = "triage"
+
+    # Final-delivery extensions are opt-in, preserving Entrega 1 defaults.
+    peak_extra_doctors: int = Field(0, ge=0, le=5)
+    peak_start_minute: float = Field(720, ge=0, lt=1440)
+    peak_end_minute: float = Field(1080, gt=0, le=1440)
+    patience_mean_minutes: float | None = Field(None, gt=0, le=10080)
+    abandonment_min_triage: int = Field(4, ge=1, le=5)
+    retry_probability: float = Field(0, ge=0, le=1)
+    retry_delay_minutes: float = Field(60, gt=0, le=1440)
+    max_retries: int = Field(1, ge=0, le=3)
+
+    @model_validator(mode="after")
+    def validate_shift(self):
+        if self.peak_start_minute >= self.peak_end_minute:
+            raise ValueError("El turno debe terminar después de comenzar")
+        if self.doctors + self.peak_extra_doctors > 20:
+            raise ValueError("La capacidad médica total no puede superar 20")
+        return self
 
     # Validate elements as well as the tuple length.
     @field_validator("arrival_rates_per_hour")
@@ -51,6 +69,10 @@ class Patient:
     consultation_end: float | None = None
     observation_start: float | None = None
     departure: float | None = None
+    abandoned_at: float | None = None
+    root_id: int | None = None
+    attempt: int = 0
+
 
 
 @dataclass

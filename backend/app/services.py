@@ -59,7 +59,7 @@ def run_simulation(config: SimulationConfig, db: Session):
     end = result["metrics"]["final_state"]
     db.add(TelemetrySnapshot(simulation_id=run.id, source="simulation", metrics={
         "active_patients": end["active"], "queued_patients": end["doctor_queue"] + end["triage_queue"] + end["observation_queue"],
-        "busy_doctors": end["doctors_busy"], "available_doctors": config.doctors - end["doctors_busy"],
+        "busy_doctors": end["doctors_busy"], "available_doctors": end.get("doctors_available", config.doctors) - end["doctors_busy"],
         "duration_minutes": config.duration_minutes, "elapsed_seconds": run.elapsed_seconds,
         "technical": capacity.snapshot(), "main_metrics": result["metrics"], "synthetic": True}))
     db.commit()

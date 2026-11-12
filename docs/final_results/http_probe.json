@@ -1,0 +1,513 @@
+{
+  "scope": "local-asgi-no-db",
+  "endpoint": "/api/theory/mmc",
+  "requests": 100,
+  "request_mode": "sequential; no concurrency or maximum throughput claim",
+  "mean_ms": 2.0647196700019776,
+  "p95_ms": 2.48483505005197,
+  "p99_ms": 2.711721179973691,
+  "python": "3.12.14",
+  "client_rows": [
+    {
+      "index": 0,
+      "status": 200,
+      "wall_latency_ms": 7.666986000003817
+    },
+    {
+      "index": 1,
+      "status": 200,
+      "wall_latency_ms": 2.320102999874507
+    },
+    {
+      "index": 2,
+      "status": 200,
+      "wall_latency_ms": 2.136817000064184
+    },
+    {
+      "index": 3,
+      "status": 200,
+      "wall_latency_ms": 2.4011160001009557
+    },
+    {
+      "index": 4,
+      "status": 200,
+      "wall_latency_ms": 1.8538510000780661
+    },
+    {
+      "index": 5,
+      "status": 200,
+      "wall_latency_ms": 2.039821000153097
+    },
+    {
+      "index": 6,
+      "status": 200,
+      "wall_latency_ms": 1.9087739999577025
+    },
+    {
+      "index": 7,
+      "status": 200,
+      "wall_latency_ms": 2.411251000012271
+    },
+    {
+      "index": 8,
+      "status": 200,
+      "wall_latency_ms": 1.8658689998574118
+    },
+    {
+      "index": 9,
+      "status": 200,
+      "wall_latency_ms": 2.0470930001010856
+    },
+    {
+      "index": 10,
+      "status": 200,
+      "wall_latency_ms": 1.7875020000701625
+    },
+    {
+      "index": 11,
+      "status": 200,
+      "wall_latency_ms": 1.9439369998508482
+    },
+    {
+      "index": 12,
+      "status": 200,
+      "wall_latency_ms": 1.8484530000932864
+    },
+    {
+      "index": 13,
+      "status": 200,
+      "wall_latency_ms": 1.7638760000409093
+    },
+    {
+      "index": 14,
+      "status": 200,
+      "wall_latency_ms": 2.0975980000912386
+    },
+    {
+      "index": 15,
+      "status": 200,
+      "wall_latency_ms": 1.9757750001190288
+    },
+    {
+      "index": 16,
+      "status": 200,
+      "wall_latency_ms": 2.1321809999790275
+    },
+    {
+      "index": 17,
+      "status": 200,
+      "wall_latency_ms": 1.9739330000447808
+    },
+    {
+      "index": 18,
+      "status": 200,
+      "wall_latency_ms": 1.8842580000182352
+    },
+    {
+      "index": 19,
+      "status": 200,
+      "wall_latency_ms": 1.928122999970583
+    },
+    {
+      "index": 20,
+      "status": 200,
+      "wall_latency_ms": 2.2482950000721758
+    },
+    {
+      "index": 21,
+      "status": 200,
+      "wall_latency_ms": 2.2540540001045883
+    },
+    {
+      "index": 22,
+      "status": 200,
+      "wall_latency_ms": 1.7650780000622035
+    },
+    {
+      "index": 23,
+      "status": 200,
+      "wall_latency_ms": 2.2675039999739965
+    },
+    {
+      "index": 24,
+      "status": 200,
+      "wall_latency_ms": 1.8523590001677803
+    },
+    {
+      "index": 25,
+      "status": 200,
+      "wall_latency_ms": 2.0165669998277735
+    },
+    {
+      "index": 26,
+      "status": 200,
+      "wall_latency_ms": 2.1874340000067605
+    },
+    {
+      "index": 27,
+      "status": 200,
+      "wall_latency_ms": 2.0916690000376548
+    },
+    {
+      "index": 28,
+      "status": 200,
+      "wall_latency_ms": 1.7791990001114755
+    },
+    {
+      "index": 29,
+      "status": 200,
+      "wall_latency_ms": 2.2173090001160745
+    },
+    {
+      "index": 30,
+      "status": 200,
+      "wall_latency_ms": 1.8621140000050218
+    },
+    {
+      "index": 31,
+      "status": 200,
+      "wall_latency_ms": 2.172921999999744
+    },
+    {
+      "index": 32,
+      "status": 200,
+      "wall_latency_ms": 2.0527609999589913
+    },
+    {
+      "index": 33,
+      "status": 200,
+      "wall_latency_ms": 2.0813240000734368
+    },
+    {
+      "index": 34,
+      "status": 200,
+      "wall_latency_ms": 1.898759000141581
+    },
+    {
+      "index": 35,
+      "status": 200,
+      "wall_latency_ms": 2.356337999799507
+    },
+    {
+      "index": 36,
+      "status": 200,
+      "wall_latency_ms": 1.70302499986974
+    },
+    {
+      "index": 37,
+      "status": 200,
+      "wall_latency_ms": 1.9740530001399748
+    },
+    {
+      "index": 38,
+      "status": 200,
+      "wall_latency_ms": 1.8894459999501123
+    },
+    {
+      "index": 39,
+      "status": 200,
+      "wall_latency_ms": 1.8707970000377827
+    },
+    {
+      "index": 40,
+      "status": 200,
+      "wall_latency_ms": 2.111328999944817
+    },
+    {
+      "index": 41,
+      "status": 200,
+      "wall_latency_ms": 1.9730809999600751
+    },
+    {
+      "index": 42,
+      "status": 200,
+      "wall_latency_ms": 2.0721099999718717
+    },
+    {
+      "index": 43,
+      "status": 200,
+      "wall_latency_ms": 2.4056530000962084
+    },
+    {
+      "index": 44,
+      "status": 200,
+      "wall_latency_ms": 2.5014609998379456
+    },
+    {
+      "index": 45,
+      "status": 200,
+      "wall_latency_ms": 1.83958899992831
+    },
+    {
+      "index": 46,
+      "status": 200,
+      "wall_latency_ms": 2.089635999936945
+    },
+    {
+      "index": 47,
+      "status": 200,
+      "wall_latency_ms": 2.1771680001165805
+    },
+    {
+      "index": 48,
+      "status": 200,
+      "wall_latency_ms": 1.8964759999562375
+    },
+    {
+      "index": 49,
+      "status": 200,
+      "wall_latency_ms": 2.007733000027656
+    },
+    {
+      "index": 50,
+      "status": 200,
+      "wall_latency_ms": 2.167734000067867
+    },
+    {
+      "index": 51,
+      "status": 200,
+      "wall_latency_ms": 1.9930509999994683
+    },
+    {
+      "index": 52,
+      "status": 200,
+      "wall_latency_ms": 1.8451679998179316
+    },
+    {
+      "index": 53,
+      "status": 200,
+      "wall_latency_ms": 2.1907479999754287
+    },
+    {
+      "index": 54,
+      "status": 200,
+      "wall_latency_ms": 1.6639650000342954
+    },
+    {
+      "index": 55,
+      "status": 200,
+      "wall_latency_ms": 1.8369060001077742
+    },
+    {
+      "index": 56,
+      "status": 200,
+      "wall_latency_ms": 2.5682820000838547
+    },
+    {
+      "index": 57,
+      "status": 200,
+      "wall_latency_ms": 2.004919000000882
+    },
+    {
+      "index": 58,
+      "status": 200,
+      "wall_latency_ms": 1.9840019999719516
+    },
+    {
+      "index": 59,
+      "status": 200,
+      "wall_latency_ms": 2.523631000030946
+    },
+    {
+      "index": 60,
+      "status": 200,
+      "wall_latency_ms": 2.0583400000759866
+    },
+    {
+      "index": 61,
+      "status": 200,
+      "wall_latency_ms": 1.8684239998947305
+    },
+    {
+      "index": 62,
+      "status": 200,
+      "wall_latency_ms": 2.6616679999733606
+    },
+    {
+      "index": 63,
+      "status": 200,
+      "wall_latency_ms": 1.8406920000870741
+    },
+    {
+      "index": 64,
+      "status": 200,
+      "wall_latency_ms": 1.786279999805629
+    },
+    {
+      "index": 65,
+      "status": 200,
+      "wall_latency_ms": 1.8475720000878937
+    },
+    {
+      "index": 66,
+      "status": 200,
+      "wall_latency_ms": 2.1771089998310345
+    },
+    {
+      "index": 67,
+      "status": 200,
+      "wall_latency_ms": 1.8625749999046093
+    },
+    {
+      "index": 68,
+      "status": 200,
+      "wall_latency_ms": 1.8844579999495181
+    },
+    {
+      "index": 69,
+      "status": 200,
+      "wall_latency_ms": 1.661892999891279
+    },
+    {
+      "index": 70,
+      "status": 200,
+      "wall_latency_ms": 1.7415219999747933
+    },
+    {
+      "index": 71,
+      "status": 200,
+      "wall_latency_ms": 1.9480939999994007
+    },
+    {
+      "index": 72,
+      "status": 200,
+      "wall_latency_ms": 2.3694080000495887
+    },
+    {
+      "index": 73,
+      "status": 200,
+      "wall_latency_ms": 1.7618629999560653
+    },
+    {
+      "index": 74,
+      "status": 200,
+      "wall_latency_ms": 2.0061909999640193
+    },
+    {
+      "index": 75,
+      "status": 200,
+      "wall_latency_ms": 1.7128389999925275
+    },
+    {
+      "index": 76,
+      "status": 200,
+      "wall_latency_ms": 1.7769460000636172
+    },
+    {
+      "index": 77,
+      "status": 200,
+      "wall_latency_ms": 2.4839600000632345
+    },
+    {
+      "index": 78,
+      "status": 200,
+      "wall_latency_ms": 2.10783900001843
+    },
+    {
+      "index": 79,
+      "status": 200,
+      "wall_latency_ms": 1.9355550000454969
+    },
+    {
+      "index": 80,
+      "status": 200,
+      "wall_latency_ms": 2.0011039998735214
+    },
+    {
+      "index": 81,
+      "status": 200,
+      "wall_latency_ms": 2.2045590001198434
+    },
+    {
+      "index": 82,
+      "status": 200,
+      "wall_latency_ms": 2.272161000064443
+    },
+    {
+      "index": 83,
+      "status": 200,
+      "wall_latency_ms": 2.3337539998919965
+    },
+    {
+      "index": 84,
+      "status": 200,
+      "wall_latency_ms": 2.014193000150044
+    },
+    {
+      "index": 85,
+      "status": 200,
+      "wall_latency_ms": 1.941733999956341
+    },
+    {
+      "index": 86,
+      "status": 200,
+      "wall_latency_ms": 2.0518900000752183
+    },
+    {
+      "index": 87,
+      "status": 200,
+      "wall_latency_ms": 1.6854680000051303
+    },
+    {
+      "index": 88,
+      "status": 200,
+      "wall_latency_ms": 1.8334559999857447
+    },
+    {
+      "index": 89,
+      "status": 200,
+      "wall_latency_ms": 2.168845999904079
+    },
+    {
+      "index": 90,
+      "status": 200,
+      "wall_latency_ms": 1.8498249999083782
+    },
+    {
+      "index": 91,
+      "status": 200,
+      "wall_latency_ms": 1.8853690000923962
+    },
+    {
+      "index": 92,
+      "status": 200,
+      "wall_latency_ms": 1.8038959999557846
+    },
+    {
+      "index": 93,
+      "status": 200,
+      "wall_latency_ms": 1.9588190000376926
+    },
+    {
+      "index": 94,
+      "status": 200,
+      "wall_latency_ms": 1.7917980001129763
+    },
+    {
+      "index": 95,
+      "status": 200,
+      "wall_latency_ms": 1.6086719999748311
+    },
+    {
+      "index": 96,
+      "status": 200,
+      "wall_latency_ms": 1.8583479998142138
+    },
+    {
+      "index": 97,
+      "status": 200,
+      "wall_latency_ms": 1.6095940000013798
+    },
+    {
+      "index": 98,
+      "status": 200,
+      "wall_latency_ms": 1.8106359998455446
+    },
+    {
+      "index": 99,
+      "status": 200,
+      "wall_latency_ms": 1.9136509999952978
+    }
+  ],
+  "note": "Local ASGI probe skips lifespan/DB and TCP; Docker/persistence not verified by this probe."
+}
