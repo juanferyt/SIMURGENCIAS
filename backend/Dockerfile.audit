@@ -1,0 +1,8 @@
+FROM simurgencias-backend:latest
+USER root
+COPY backend/requirements-lab.txt /tmp/requirements-lab.txt
+COPY backend/requirements.txt /tmp/requirements.txt
+RUN pip install --no-cache-dir -r /tmp/requirements-lab.txt
+USER appuser
+WORKDIR /workspace/backend
+ENV MPLBACKEND=Agg

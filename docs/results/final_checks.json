@@ -1,0 +1,12 @@
+[
+  {"command":"docker compose down (sin -v); docker compose up --build -d; docker compose ps", "exit_code":0},
+  {"command":"docker compose exec -T backend pytest -q", "exit_code":0,"passed":29,"failed":0,"warnings":1},
+  {"command":"docker compose exec -T backend python -m compileall -q app", "exit_code":0},
+  {"command":"docker compose exec -T backend alembic current", "exit_code":0,"revision":"001 (head)"},
+  {"command":"npm --prefix frontend run build", "exit_code":0},
+  {"command":"npm --prefix frontend test", "exit_code":0,"passed":6,"failed":0},
+  {"command":"audit: python /workspace/scripts/verify_notebook.py", "exit_code":0,"cells":12},
+  {"command":"audit: python /workspace/scripts/audit_experiments.py", "exit_code":0,"main_runs":120,"reference_runs":60,"executions":2},
+  {"command":"audit: python /workspace/scripts/audit_api.py", "exit_code":0,"sequential_requests":37,"c6_statuses":[201,201,429]},
+  {"command":"audit_restart.py before; docker compose restart backend; audit_restart.py after", "exit_code":0}
+]

@@ -1,0 +1,15 @@
+services:
+  audit:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile.audit
+    environment:
+      DATABASE_URL: postgresql+psycopg://${POSTGRES_USER:-simurgencias}:${POSTGRES_PASSWORD:-simurgencias_demo}@postgres:5432/${POSTGRES_DB:-simurgencias}
+      API_URL: http://backend:8000
+      FRONTEND_URL: http://frontend
+    volumes:
+      - .:/workspace
+    depends_on:
+      backend:
+        condition: service_healthy
+    command: ["python", "/workspace/scripts/audit_experiments.py"]

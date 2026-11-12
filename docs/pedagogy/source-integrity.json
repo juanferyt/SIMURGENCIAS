@@ -1,0 +1,47 @@
+﻿[
+    {
+        "path":  "backend/app/simulation/domain.py",
+        "matchesAudit":  true,
+        "sha256":  "6ed7bcd5279dc5d6dcb5f305346dc11f2858a9b90fbc226740d295c16ec03ae8"
+    },
+    {
+        "path":  "backend/app/simulation/engine.py",
+        "matchesAudit":  true,
+        "sha256":  "801373dc04b1a58f8733686069edffc81db466bc0072f607d4906541c2a92fe1"
+    },
+    {
+        "path":  "backend/app/simulation/randomness.py",
+        "matchesAudit":  true,
+        "sha256":  "6f1eea6adc026be12fa7a6aad27f8ab2ed0da7c04378ba21a53b08dc3c03bd63"
+    },
+    {
+        "path":  "backend/app/simulation/reference.py",
+        "matchesAudit":  true,
+        "sha256":  "c0389b0a3da4cda7da9f9ef418dcafb82da2b7bfc2a12e93e9cfe4b734234573"
+    },
+    {
+        "path":  "backend/app/simulation/statistics.py",
+        "matchesAudit":  true,
+        "sha256":  "2408ab82926c31a06ac62ae506120853a21be306ea1d0e50567e7f2922546e46"
+    },
+    {
+        "path":  "backend/app/simulation/strategies.py",
+        "matchesAudit":  true,
+        "sha256":  "cf66e15ecf087aaefcce7197c2867cd377e549e9d6697f2efdf61f592eff9b0a"
+    },
+    {
+        "path":  "backend/app/simulation/theory.py",
+        "matchesAudit":  true,
+        "sha256":  "1f4fc8ae9bd87391075f954f9469ee2c013c27e939dccf6961639262cd4b3c75"
+    },
+    {
+        "path":  "backend/app/simulation/__init__.py",
+        "matchesAudit":  true,
+        "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+        "path":  "scripts/audit_experiments.py",
+        "matchesAudit":  true,
+        "sha256":  "c94757d48035bed0da5321a6f305de756f9a219e5b1234e3ffc7d7b88cd37ffb"
+    }
+]

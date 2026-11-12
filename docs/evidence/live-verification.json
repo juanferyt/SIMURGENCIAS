@@ -1,0 +1,214 @@
+{
+  "verified_at": "2026-09-30T00:21:18.483Z",
+  "health": {
+    "status": "ok",
+    "database": "postgresql"
+  },
+  "config": {
+    "doctors": 2,
+    "triage_staff": 1,
+    "observation_beds": 4,
+    "duration_minutes": 1440,
+    "seed": 42,
+    "arrival_profile": "time_varying",
+    "arrival_rates_per_hour": [
+      2,
+      5,
+      9,
+      6
+    ],
+    "stationary_rate_per_hour": 5,
+    "triage_mean_minutes": 5,
+    "consultation_mean_minutes": 18,
+    "observation_mean_minutes": 60,
+    "observation_probability": 0.2,
+    "priority_policy": "triage"
+  },
+  "reproducibility": true,
+  "persistence": true,
+  "scenarios": [
+    {
+      "id": "177af34c-116b-46f0-9efb-528e1d1564cb",
+      "doctors": 1,
+      "metrics": {
+        "generated": 132,
+        "treated": 79,
+        "discharged": 79,
+        "abandoned": 0,
+        "active_at_end": 53,
+        "mean_wait_minutes": 61.87928531307019,
+        "mean_system_minutes": 96.11451351579875,
+        "mean_service_minutes": 15.8889893827938,
+        "mean_triage_wait_minutes": 4.204400836458389,
+        "mean_queue_length": 19.70070764325193,
+        "mean_triage_queue_length": 0.38540341000868567,
+        "mean_observation_queue_length": 0,
+        "doctor_utilization": 0.9283649460846707,
+        "triage_utilization": 0.40178299433791154,
+        "bed_utilization": 0.11643394738657484,
+        "mean_active": 21.881994783229494,
+        "duration_minutes": 1440,
+        "final_state": {
+          "active": 53,
+          "triage_queue": 0,
+          "doctor_queue": 52,
+          "observation_queue": 0,
+          "triage_busy": 0,
+          "doctors_busy": 1,
+          "beds_busy": 0
+        }
+      },
+      "little": {
+        "L_observed": 21.881994783229494,
+        "lambda_observed_per_minute": 0.05486111111111111,
+        "W_observed_minutes": 96.11451351579875,
+        "lambda_W": 5.272949005380625,
+        "difference": 16.60904577784887,
+        "censored_contribution": 16.60904577784888,
+        "explanation": "λ usa egresos/horizonte y W solo egresados. L integra todos los activos. La diferencia es el tiempo acumulado de pacientes aún presentes al corte; no se drenan las colas."
+      }
+    },
+    {
+      "id": "9e02d019-efe7-40a5-8610-24a9e084e064",
+      "doctors": 2,
+      "metrics": {
+        "generated": 132,
+        "treated": 122,
+        "discharged": 121,
+        "abandoned": 0,
+        "active_at_end": 11,
+        "mean_wait_minutes": 19.04035856985592,
+        "mean_system_minutes": 51.68948208717248,
+        "mean_service_minutes": 17.043387789914675,
+        "mean_triage_wait_minutes": 4.204400836458389,
+        "mean_queue_length": 2.80906919425532,
+        "mean_triage_queue_length": 0.38540341000868567,
+        "mean_observation_queue_length": 0,
+        "doctor_utilization": 0.7530462432197497,
+        "triage_utilization": 0.40178299433791154,
+        "bed_utilization": 0.15140092720520984,
+        "mean_active": 5.7079517938622555,
+        "duration_minutes": 1440,
+        "final_state": {
+          "active": 11,
+          "triage_queue": 0,
+          "doctor_queue": 8,
+          "observation_queue": 0,
+          "triage_busy": 0,
+          "doctors_busy": 2,
+          "beds_busy": 1
+        }
+      },
+      "little": {
+        "L_observed": 5.7079517938622555,
+        "lambda_observed_per_minute": 0.08402777777777778,
+        "W_observed_minutes": 51.68948208717248,
+        "lambda_W": 4.343352314269355,
+        "difference": 1.3645994795929006,
+        "censored_contribution": 1.3645994795929013,
+        "explanation": "λ usa egresos/horizonte y W solo egresados. L integra todos los activos. La diferencia es el tiempo acumulado de pacientes aún presentes al corte; no se drenan las colas."
+      }
+    },
+    {
+      "id": "7d972d27-0f24-4ea1-b018-c4b25fc1e7e8",
+      "doctors": 3,
+      "metrics": {
+        "generated": 132,
+        "treated": 130,
+        "discharged": 129,
+        "abandoned": 0,
+        "active_at_end": 3,
+        "mean_wait_minutes": 2.022619535189632,
+        "mean_system_minutes": 34.486895851867814,
+        "mean_service_minutes": 16.988680148772364,
+        "mean_triage_wait_minutes": 4.204400836458389,
+        "mean_queue_length": 0.18540679072571625,
+        "mean_triage_queue_length": 0.38540341000868567,
+        "mean_observation_queue_length": 0,
+        "doctor_utilization": 0.5344089077623436,
+        "triage_utilization": 0.40178299433791154,
+        "bed_utilization": 0.1546003024568111,
+        "mean_active": 3.1942211281865887,
+        "duration_minutes": 1440,
+        "final_state": {
+          "active": 3,
+          "triage_queue": 0,
+          "doctor_queue": 0,
+          "observation_queue": 0,
+          "triage_busy": 0,
+          "doctors_busy": 2,
+          "beds_busy": 1
+        }
+      },
+      "little": {
+        "L_observed": 3.1942211281865887,
+        "lambda_observed_per_minute": 0.08958333333333333,
+        "W_observed_minutes": 34.486895851867814,
+        "lambda_W": 3.089451086729825,
+        "difference": 0.10477004145676361,
+        "censored_contribution": 0.10477004145676448,
+        "explanation": "λ usa egresos/horizonte y W solo egresados. L integra todos los activos. La diferencia es el tiempo acumulado de pacientes aún presentes al corte; no se drenan las colas."
+      }
+    },
+    {
+      "id": "dfef0521-01e8-4719-ac95-c39a9dd9d589",
+      "doctors": 4,
+      "metrics": {
+        "generated": 132,
+        "treated": 130,
+        "discharged": 129,
+        "abandoned": 0,
+        "active_at_end": 3,
+        "mean_wait_minutes": 0.5980373938339898,
+        "mean_system_minutes": 33.02918389327134,
+        "mean_service_minutes": 16.988680148772364,
+        "mean_triage_wait_minutes": 4.204400836458389,
+        "mean_queue_length": 0.054820094434782404,
+        "mean_triage_queue_length": 0.38540341000868567,
+        "mean_observation_queue_length": 0,
+        "doctor_utilization": 0.4008066808217577,
+        "triage_utilization": 0.40178299433791154,
+        "bed_utilization": 0.1546003024568111,
+        "mean_active": 3.063634431895652,
+        "duration_minutes": 1440,
+        "final_state": {
+          "active": 3,
+          "triage_queue": 0,
+          "doctor_queue": 0,
+          "observation_queue": 0,
+          "triage_busy": 0,
+          "doctors_busy": 2,
+          "beds_busy": 1
+        }
+      },
+      "little": {
+        "L_observed": 3.063634431895652,
+        "lambda_observed_per_minute": 0.08958333333333333,
+        "W_observed_minutes": 33.02918389327134,
+        "lambda_W": 2.9588643904388907,
+        "difference": 0.10477004145676139,
+        "censored_contribution": 0.10477004145676448,
+        "explanation": "λ usa egresos/horizonte y W solo egresados. L integra todos los activos. La diferencia es el tiempo acumulado de pacientes aún presentes al corte; no se drenan las colas."
+      }
+    }
+  ],
+  "stationary_reference": {
+    "compatible": false,
+    "reference": {
+      "lambda_per_minute": 0.08333333333333333,
+      "mu_per_minute": 0.05555555555555555,
+      "c": 2,
+      "rho": 0.75,
+      "stable": true,
+      "P_wait": 0.6428571428571429,
+      "Wq": 23.142857142857146,
+      "W": 41.142857142857146,
+      "Lq": 1.9285714285714288,
+      "L": 3.428571428571429
+    },
+    "reason": "Referencia aislada de consulta con entrada Poisson y FIFO; el DES tiene triage previo, prioridad opcional y horizonte finito.",
+    "des_Wq": 14.942122409750828,
+    "des_Lq": 1.245955823169783,
+    "difference_Wq": -8.200734733106318
+  }
+}

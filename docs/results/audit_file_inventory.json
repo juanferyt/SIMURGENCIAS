@@ -1,0 +1,11 @@
+{
+  "created_source": ["scripts/audit_restart.py"],
+  "modified_source": ["scripts/audit_api.py", "scripts/audit_experiments.py", "scripts/audit_report.py"],
+  "created_documentation": ["docs/RESULTADOS_ENTREGA_1.md"],
+  "modified_documentation": ["README.md", "docs/ENTREGA_1.md", "docs/VERIFICACION.md", "docs/MODELO_DES.md"],
+  "new_evidence": ["01_wq_por_medicos.png", "02_p95_espera_por_medicos.png", "03_utilizacion_por_medicos.png", "04_lq_por_medicos.png", "05_throughput_por_medicos.png", "06_cola_temporal.png", "07_llegadas_por_franja.png", "08_espera_por_triage.png", "intervalos_confianza_95.csv", "intervalos_confianza_95.json", "cambios_capacidad.csv", "cambios_capacidad.json", "little_validation.csv", "restart_validation.json", "final_checks.json", "final-audit-before.json", "final-audit-changes.json", "docker-final.txt", "audit_file_inventory.json"],
+  "regenerated_evidence": ["reproducibilidad.json", "repeticiones_120.csv", "hospital_runs.json.gz", "estadisticos_por_escenario.json", "escenarios_1_4_medicos.csv", "escenarios_1_4_medicos.json", "little_modelo_completo.csv", "little_referencia.csv", "espera_por_triage.csv", "llegadas_por_franja.csv", "llegadas_por_franja_replicas.csv", "mmc_analitico.json", "mmc_repeticiones_60.csv", "mmc_vs_simpy.csv", "mmc_vs_simpy.json", "experiment_manifest.json", "api_audit.json", "pytest.txt", "playwright.txt", "notebook.txt", "experiments_log.txt", "medicos_vs_Wq.png", "medicos_vs_p95.png", "medicos_vs_utilizacion.png", "medicos_vs_Lq.png", "medicos_vs_throughput.png", "evolucion_cola.png", "llegadas_por_franja.png", "espera_por_triage.png"],
+  "preservation": "Archivos previos de docs/results y documentos anteriores copiados a docs/results/previous-audit; Playwright regenera también sus capturas y evidencia en docs/redesign.",
+  "unchanged_verified_sha256": ["backend/app", "backend/tests", "frontend/src"],
+  "unchanged_by_audit": ["docker-compose.yml", "migraciones", "notebook", "dependencias", "frontend/tests"]
+}

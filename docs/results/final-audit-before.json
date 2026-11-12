@@ -1,0 +1,122 @@
+﻿[
+    {
+        "Path":  "C:\\Users\\PC\\Desktop\\SIMURGENCIAS\\backend\\app\\cli.py",
+        "Hash":  "D8F72D3C494AA9FA6B1757369D1E559948AC63821AF9B31EBF01D07D930B2A66"
+    },
+    {
+        "Path":  "C:\\Users\\PC\\Desktop\\SIMURGENCIAS\\backend\\app\\database.py",
+        "Hash":  "3F4AC39E6B310A61814ED5DA07366EDCAC87B870FFCF32C5B1110D8CCB758D35"
+    },
+    {
+        "Path":  "C:\\Users\\PC\\Desktop\\SIMURGENCIAS\\backend\\app\\main.py",
+        "Hash":  "DAD9D1F413660DD694607CF6B3F103856085A8B7F60F4BC323615DBF598D3D3E"
+    },
+    {
+        "Path":  "C:\\Users\\PC\\Desktop\\SIMURGENCIAS\\backend\\app\\seed.py",
+        "Hash":  "F0D289457F1B4B403015AEA01B7DAE3ECFBBBF977ACDEADC57C3A88F2498ABF9"
+    },
+    {
+        "Path":  "C:\\Users\\PC\\Desktop\\SIMURGENCIAS\\backend\\app\\services.py",
+        "Hash":  "F81C9E570090B81597ADA4B4924DE95E493BEDA33A0C93238ACA681C37936355"
+    },
+    {
+        "Path":  "C:\\Users\\PC\\Desktop\\SIMURGENCIAS\\backend\\app\\__init__.py",
+        "Hash":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+        "Path":  "C:\\Users\\PC\\Desktop\\SIMURGENCIAS\\backend\\app\\simulation\\domain.py",
+        "Hash":  "6ED7BCD5279DC5D6DCB5F305346DC11F2858A9B90FBC226740D295C16EC03AE8"
+    },
+    {
+        "Path":  "C:\\Users\\PC\\Desktop\\SIMURGENCIAS\\backend\\app\\simulation\\engine.py",
+        "Hash":  "801373DC04B1A58F8733686069EDFFC81DB466BC0072F607D4906541C2A92FE1"
+    },
+    {
+        "Path":  "C:\\Users\\PC\\Desktop\\SIMURGENCIAS\\backend\\app\\simulation\\randomness.py",
+        "Hash":  "6F1EEA6ADC026BE12FA7A6AAD27F8AB2ED0DA7C04378BA21A53B08DC3C03BD63"
+    },
+    {
+        "Path":  "C:\\Users\\PC\\Desktop\\SIMURGENCIAS\\backend\\app\\simulation\\reference.py",
+        "Hash":  "C0389B0A3DA4CDA7DA9F9EF418DCAFB82DA2B7BFC2A12E93E9CFE4B734234573"
+    },
+    {
+        "Path":  "C:\\Users\\PC\\Desktop\\SIMURGENCIAS\\backend\\app\\simulation\\statistics.py",
+        "Hash":  "2408AB82926C31A06AC62AE506120853A21BE306EA1D0E50567E7F2922546E46"
+    },
+    {
+        "Path":  "C:\\Users\\PC\\Desktop\\SIMURGENCIAS\\backend\\app\\simulation\\strategies.py",
+        "Hash":  "CF66E15ECF087AAEFCCE7197C2867CD377E549E9D6697F2EFDF61F592EFF9B0A"
+    },
+    {
+        "Path":  "C:\\Users\\PC\\Desktop\\SIMURGENCIAS\\backend\\app\\simulation\\theory.py",
+        "Hash":  "1F4FC8AE9BD87391075F954F9469EE2C013C27E939DCCF6961639262CD4B3C75"
+    },
+    {
+        "Path":  "C:\\Users\\PC\\Desktop\\SIMURGENCIAS\\backend\\app\\simulation\\__init__.py",
+        "Hash":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+        "Path":  "C:\\Users\\PC\\Desktop\\SIMURGENCIAS\\backend\\tests\\test_api.py",
+        "Hash":  "3B330098E2FE6005DE19155B194BFB33482047CF21F104962EDD1D99C699E7FA"
+    },
+    {
+        "Path":  "C:\\Users\\PC\\Desktop\\SIMURGENCIAS\\backend\\tests\\test_audit.py",
+        "Hash":  "0F6ABD4429050E42A87A46B782A25A0A4BAF9738CB53004A67CA9ED942A060D1"
+    },
+    {
+        "Path":  "C:\\Users\\PC\\Desktop\\SIMURGENCIAS\\backend\\tests\\test_simulation.py",
+        "Hash":  "A6026DB874D3E9B16979B2B6A1194AFA7851AF57D565BD65E235B6C007336110"
+    },
+    {
+        "Path":  "C:\\Users\\PC\\Desktop\\SIMURGENCIAS\\frontend\\src\\api.ts",
+        "Hash":  "F9F178EFCEB0445350ABC934E867E83CD65DF35C568CB40737064F62E649F8B4"
+    },
+    {
+        "Path":  "C:\\Users\\PC\\Desktop\\SIMURGENCIAS\\frontend\\src\\App.tsx",
+        "Hash":  "D52AA4285042FB3236A333184465BD16352324F6192629493849CE883F08C908"
+    },
+    {
+        "Path":  "C:\\Users\\PC\\Desktop\\SIMURGENCIAS\\frontend\\src\\components.tsx",
+        "Hash":  "97DF184F93BF01CCD4F7E64365A435D897C4C133D23CFFFB5A22BEC75788CC57"
+    },
+    {
+        "Path":  "C:\\Users\\PC\\Desktop\\SIMURGENCIAS\\frontend\\src\\laboratory.ts",
+        "Hash":  "D2EEC0D36608D51BE9DF3E0E35CA0B5039071CF3E18D1D6D0FD31E6DCBD35FDB"
+    },
+    {
+        "Path":  "C:\\Users\\PC\\Desktop\\SIMURGENCIAS\\frontend\\src\\main.tsx",
+        "Hash":  "B8C1E566187EA5D53BF9B4C2F4CD8FC8193B4958AFA219E57D39B76153F4FB20"
+    },
+    {
+        "Path":  "C:\\Users\\PC\\Desktop\\SIMURGENCIAS\\frontend\\src\\styles.css",
+        "Hash":  "05FB4AB70B472FF6589D716795CFD4215A0B5465D139A9063CE47CB3A1F6F3B2"
+    },
+    {
+        "Path":  "C:\\Users\\PC\\Desktop\\SIMURGENCIAS\\scripts\\audit-snapshot.mjs",
+        "Hash":  "E497A554FBB78501B6FE640D331F9857A3CA996DC3EDEDE35023988C787D119D"
+    },
+    {
+        "Path":  "C:\\Users\\PC\\Desktop\\SIMURGENCIAS\\scripts\\audit_api.py",
+        "Hash":  "C19BD06273716E62ACD5C12545DC2C07B7C57F89EC51F1EFFCE56F88B4F19ABB"
+    },
+    {
+        "Path":  "C:\\Users\\PC\\Desktop\\SIMURGENCIAS\\scripts\\audit_experiments.py",
+        "Hash":  "02FB55AA27F6F1B909BF49A6523F2335515F64C13A39E0C54C3761AE85F08F57"
+    },
+    {
+        "Path":  "C:\\Users\\PC\\Desktop\\SIMURGENCIAS\\scripts\\audit_report.py",
+        "Hash":  "5ECBAF0A949FC50F80716704F853CA03CBCBECF067893BD39C1DA5E6B60A6F24"
+    },
+    {
+        "Path":  "C:\\Users\\PC\\Desktop\\SIMURGENCIAS\\scripts\\generate-notebook.mjs",
+        "Hash":  "6473B3792CA471135F797229F57A7C127F9681A37BABB6EADDCABF72E48CD89F"
+    },
+    {
+        "Path":  "C:\\Users\\PC\\Desktop\\SIMURGENCIAS\\scripts\\verify-live.mjs",
+        "Hash":  "BAA25FDFD641FD658D2CB7A359FD998E657B58A806E658D99AE5B997DC101D53"
+    },
+    {
+        "Path":  "C:\\Users\\PC\\Desktop\\SIMURGENCIAS\\scripts\\verify_notebook.py",
+        "Hash":  "698F5447E93F77A145D291639E7A5ECE4FE6E0CDDFA23FB4A36626EA70AA95DA"
+    }
+]

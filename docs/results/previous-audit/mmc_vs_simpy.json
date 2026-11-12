@@ -1,0 +1,92 @@
+[
+  {
+    "doctors": 3,
+    "metric": "rho",
+    "theoretical": 0.9,
+    "simpy_mean": 0.901471633217226,
+    "absolute_difference": 0.0014716332172259872,
+    "percent_difference": 0.16351480191399856,
+    "replication_std": 0.00996555130982727
+  },
+  {
+    "doctors": 3,
+    "metric": "Lq",
+    "theoretical": 7.353549190535494,
+    "simpy_mean": 7.616423936713164,
+    "absolute_difference": 0.2628747461776699,
+    "percent_difference": 3.5748009480375433,
+    "replication_std": 1.1089259893238212
+  },
+  {
+    "doctors": 3,
+    "metric": "Wq",
+    "theoretical": 49.02366127023663,
+    "simpy_mean": 50.72906476440699,
+    "absolute_difference": 1.705403494170362,
+    "percent_difference": 3.478735471774628,
+    "replication_std": 7.188149792078163
+  },
+  {
+    "doctors": 3,
+    "metric": "W",
+    "theoretical": 67.02366127023663,
+    "simpy_mean": 68.7500794344136,
+    "absolute_difference": 1.7264181641769767,
+    "percent_difference": 2.575833864426072,
+    "replication_std": 7.265596740236418
+  },
+  {
+    "doctors": 3,
+    "metric": "L",
+    "theoretical": 10.053549190535493,
+    "simpy_mean": 10.320838836364842,
+    "absolute_difference": 0.267289645829349,
+    "percent_difference": 2.6586595516037064,
+    "replication_std": 1.1315066976083663
+  },
+  {
+    "doctors": 4,
+    "metric": "rho",
+    "theoretical": 0.675,
+    "simpy_mean": 0.6761172564776298,
+    "absolute_difference": 0.0011172564776297245,
+    "percent_difference": 0.16551947816736656,
+    "replication_std": 0.007498918809910409
+  },
+  {
+    "doctors": 4,
+    "metric": "Lq",
+    "theoretical": 0.8114525315006119,
+    "simpy_mean": 0.8330406867391853,
+    "absolute_difference": 0.02158815523857338,
+    "percent_difference": 2.660433531293642,
+    "replication_std": 0.06201952748680094
+  },
+  {
+    "doctors": 4,
+    "metric": "Wq",
+    "theoretical": 5.409683543337413,
+    "simpy_mean": 5.550350544070203,
+    "absolute_difference": 0.14066700073279037,
+    "percent_difference": 2.6002815064115237,
+    "replication_std": 0.39609200167754743
+  },
+  {
+    "doctors": 4,
+    "metric": "W",
+    "theoretical": 23.40968354333741,
+    "simpy_mean": 23.571365214076827,
+    "absolute_difference": 0.16168167073941575,
+    "percent_difference": 0.6906614967267752,
+    "replication_std": 0.43628850429492716
+  },
+  {
+    "doctors": 4,
+    "metric": "L",
+    "theoretical": 3.5114525315006118,
+    "simpy_mean": 3.5375097126497046,
+    "absolute_difference": 0.026057181149092834,
+    "percent_difference": 0.7420627479750482,
+    "replication_std": 0.07905752559879525
+  }
+]

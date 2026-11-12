@@ -1,0 +1,41 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-simurgencias}
+      POSTGRES_USER: ${POSTGRES_USER:-simurgencias}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-simurgencias_demo}
+    ports:
+      - "127.0.0.1:${POSTGRES_PORT:-55440}:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 15
+  backend:
+    build: ./backend
+    environment:
+      DATABASE_URL: postgresql+psycopg://${POSTGRES_USER:-simurgencias}:${POSTGRES_PASSWORD:-simurgencias_demo}@postgres:5432/${POSTGRES_DB:-simurgencias}
+      MAX_CONCURRENT_SIMULATIONS: ${MAX_CONCURRENT_SIMULATIONS:-2}
+      CORS_ORIGINS: http://localhost:5173,http://localhost:8080
+    ports:
+      - "127.0.0.1:8000:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/api/health')"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+  frontend:
+    build: ./frontend
+    ports:
+      - "127.0.0.1:8080:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+volumes:
+  postgres_data:

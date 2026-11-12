@@ -1,0 +1,60 @@
+[
+  {
+    "lambda_per_minute": 0.15,
+    "mu_per_minute": 0.05555555555555555,
+    "c": 1,
+    "rho": 2.7,
+    "stable": false,
+    "reason": "INESTABLE: ρ ≥ 1, no existe régimen estacionario finito",
+    "P0": null,
+    "Pq": null,
+    "P_wait": null,
+    "W": null,
+    "Wq": null,
+    "L": null,
+    "Lq": null
+  },
+  {
+    "lambda_per_minute": 0.15,
+    "mu_per_minute": 0.05555555555555555,
+    "c": 2,
+    "rho": 1.35,
+    "stable": false,
+    "reason": "INESTABLE: ρ ≥ 1, no existe régimen estacionario finito",
+    "P0": null,
+    "Pq": null,
+    "P_wait": null,
+    "W": null,
+    "Wq": null,
+    "L": null,
+    "Lq": null
+  },
+  {
+    "lambda_per_minute": 0.15,
+    "mu_per_minute": 0.05555555555555555,
+    "c": 3,
+    "rho": 0.9,
+    "stable": true,
+    "P0": 0.024906600249065994,
+    "Pq": 0.8170610211706103,
+    "P_wait": 0.8170610211706103,
+    "Wq": 49.02366127023663,
+    "W": 67.02366127023663,
+    "Lq": 7.353549190535494,
+    "L": 10.053549190535493
+  },
+  {
+    "lambda_per_minute": 0.15,
+    "mu_per_minute": 0.05555555555555555,
+    "c": 4,
+    "rho": 0.675,
+    "stable": true,
+    "P0": 0.05734324342206831,
+    "Pq": 0.3906993670188131,
+    "P_wait": 0.3906993670188131,
+    "Wq": 5.409683543337413,
+    "W": 23.40968354333741,
+    "Lq": 0.8114525315006119,
+    "L": 3.5114525315006118
+  }
+]

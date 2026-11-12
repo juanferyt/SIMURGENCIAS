@@ -1,0 +1,32 @@
+[
+  {
+    "from_doctors": 1,
+    "to_doctors": 2,
+    "Wq_reduction": 45.28385727838528,
+    "Wq_reduction_percent": 51.26533224810651,
+    "p95_change": -91.04141918550224,
+    "Lq_change": -14.997297969840176,
+    "utilization_change_pp": -14.855721443653369,
+    "throughput_change": 1.8986111111111112
+  },
+  {
+    "from_doctors": 2,
+    "to_doctors": 3,
+    "Wq_reduction": 32.43780394765836,
+    "Wq_reduction_percent": 75.35182901644875,
+    "p95_change": -167.54438706468346,
+    "Lq_change": -5.348147495749327,
+    "utilization_change_pp": -18.19483650543893,
+    "throughput_change": 0.5958333333333332
+  },
+  {
+    "from_doctors": 3,
+    "to_doctors": 4,
+    "Wq_reduction": 8.859183086788558,
+    "Wq_reduction_percent": 83.4932435424814,
+    "p95_change": -51.107618747975636,
+    "Lq_change": -0.9402868361445114,
+    "utilization_change_pp": -13.14936471810681,
+    "throughput_change": 0.0625
+  }
+]
